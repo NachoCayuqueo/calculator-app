@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  /** Styles for small screens */
+  .hearder {
+    margin-bottom: 8px;
+  }
+  .calc {
+    font-size: 15px;
+  }
+  .calculator {
+    padding: 8px;
+    gap: 6px;
+  }
+  .screen {
+    font-size: 28px;
+    padding: 12px;
+  }
+  .theme {
+    margin-right: -20px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .attribution {
+    font-size: 9px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  /** Styles for medium screens */
+  .hearder {
+    margin-bottom: 8px;
+  }
+  .calc {
+    font-size: 18px;
+  }
+  .calculator {
+    padding: 8px;
+    gap: 6px;
+  }
+  .screen {
+    font-size: 28px;
+    padding: 20px;
+  }
+  .theme {
+    margin-right: -20px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .attribution {
+    font-size: 9px;
+  }
+}
