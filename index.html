@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-responsive.css" />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hearder">
+        <h4 class="calc">calc</h4>
+        <div class="switch">
+          <h4 class="theme">THEME</h4>
+
+          <div class="switch-number">
+            <h4>123</h4>
+            <input
+              oninput="onChangeTheme(this.value)"
+              class="input-switch"
+              type="range"
+              min="1"
+              max="3"
+              value="1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <div id="result">0</div>
+      </div>
+      <div class="calculator">
+        <button class="btn" onclick="createNumber('7')">7</button>
+        <button class="btn" onclick="createNumber('8')">8</button>
+        <button class="btn" onclick="createNumber('9')">9</button>
+        <button
+          class="btn btn-secondary-color btn-background-reset"
+          onclick="deleteNumber()"
+        >
+          DEL
+        </button>
+        <button class="btn" onclick="createNumber('4')">4</button>
+        <button class="btn" onclick="createNumber('5')">5</button>
+        <button class="btn" onclick="createNumber('6')">6</button>
+        <button class="btn" onclick="operation('+')">+</button>
+        <button class="btn" onclick="createNumber('1')">1</button>
+        <button class="btn" onclick="createNumber('2')">2</button>
+        <button class="btn" onclick="createNumber('3')">3</button>
+        <button class="btn" onclick="operation('-')">-</button>
+        <button class="btn" onclick="createNumber('.')">.</button>
+        <button class="btn" onclick="createNumber('0')">0</button>
+        <button class="btn" onclick="operation('/')">/</button>
+        <button class="btn" onclick="operation('x')">X</button>
+        <button
+          class="btn btn-2-spaces btn-secondary-color btn-background-reset"
+          onclick="reset()"
+        >
+          RESET
+        </button>
+        <button class="btn btn-2-spaces btn-equal" onclick="calculate()">
+          =
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/NachoCayuqueo" target="_blank"
+          >Cayuqueo,Nacho Emanuel</a
+        >.
+      </div>
+    </footer>
+    <script src="./js/calculatorStyles.js"></script>
+    <script src="./js/calculatorFunctions.js"></script>
+  </body>
+</html>
