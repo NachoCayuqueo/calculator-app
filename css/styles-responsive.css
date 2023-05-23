@@ -23,6 +23,9 @@
   .attribution {
     font-size: 9px;
   }
+  .footer {
+    max-width: 40%;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   /** Styles for medium screens */
@@ -48,5 +51,8 @@
   }
   .attribution {
     font-size: 9px;
+  }
+  .footer {
+    max-width: 30%;
   }
 }
