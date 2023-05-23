@@ -97,6 +97,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 .container {
@@ -156,6 +157,10 @@ body {
 
 /** Styles for the slider in webkit browsers (Chrome, Safari) */
 .input-switch::-webkit-slider-thumb {
+  appearance: none;
+  border-radius: 10px;
+  width: 14px;
+  height: 14px;
   background-color: var(--key-background-toggle);
 }
 .input-switch::-webkit-slider-thumb:hover {
@@ -163,6 +168,10 @@ body {
 }
 /** Styles for the slider in Mozilla browsers (Firefox) */
 .input-switch::-moz-range-thumb {
+  appearance: none;
+  border-radius: 10px;
+  width: 14px;
+  height: 14px;
   background-color: var(--key-background-toggle);
 }
 .input-switch::-moz-range-thumb:hover {
